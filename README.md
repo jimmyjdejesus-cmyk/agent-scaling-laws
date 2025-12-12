@@ -2,6 +2,8 @@
 
 Implementation of agent coordination architectures and scaling principles based on the research paper ["Towards a Science of Scaling Agent Systems"](https://arxiv.org/abs/2512.08296) (arXiv:2512.08296v1).
 
+> **Note:** This is an independent, open-source implementation created by interpreting the research paper. It is not affiliated with or endorsed by Google DeepMind. See [Attribution and Disclaimer](#attribution-and-disclaimer) section below.
+
 ## Overview
 
 This library provides a comprehensive implementation of five canonical agent architectures and empirical coordination metrics to help you design and evaluate multi-agent AI systems. The implementation is based on rigorous empirical research that studied 180 configurations across multiple benchmarks.
@@ -177,14 +179,24 @@ flake8 src/ tests/
 mypy src/
 ```
 
+## Attribution and Disclaimer
+
+This repository is an independent, open-source implementation of the methods and findings described in the Google DeepMind research paper "Towards a Science of Scaling Agent Systems" (arXiv:2512.08296). 
+
+**Important Notes:**
+- This is a **clean-room implementation** created by reading and interpreting the research paper
+- The code is an original implementation and is not affiliated with, endorsed by, or derived from any official Google/DeepMind codebase
+- All code in this repository is original work, licensed under the MIT License
+- This implementation is provided "AS IS" without warranty of any kind (see LICENSE file)
+
 ## Citation
 
 If you use this implementation in your research, please cite the original paper:
 
 ```bibtex
-@article{agent_scaling_laws_2024,
+@article{kim2024towards,
   title={Towards a Science of Scaling Agent Systems},
-  author={[Authors]},
+  author={Kim, Yubin and Gu, Ken and Park, Chanwoo and Park, Chunjong and Schmidgall, Samuel and Heydari, A. Ali and Yan, Yao and Zhang, Zhihan and Zhuang, Yuchen and Malhotra, Mark and Liang, Paul Pu and Park, Hae Won and Yang, Yuzhe and Xu, Xuhai and Du, Yilun and Patel, Shwetak and Althoff, Tim and McDuff, Daniel and Liu, Xin},
   journal={arXiv preprint arXiv:2512.08296},
   year={2024}
 }
