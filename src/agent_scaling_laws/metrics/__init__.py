@@ -6,6 +6,8 @@ from .coordination_metrics import (
     calculate_overhead,
     calculate_error_amplification,
     calculate_redundancy,
+    compute_all_metrics,
+    metrics_from_results,
 )
 
 __all__ = [
@@ -14,4 +16,6 @@ __all__ = [
     "calculate_overhead",
     "calculate_error_amplification",
     "calculate_redundancy",
+    "compute_all_metrics",
+    "metrics_from_results",
 ]
