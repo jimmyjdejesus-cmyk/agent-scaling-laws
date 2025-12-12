@@ -190,10 +190,19 @@ If you use this implementation in your research, please cite the original paper:
 }
 ```
 
+## Documentation
+
+Comprehensive documentation is available:
+
+- **[API Contracts](docs/API_CONTRACTS.md)** - Complete API reference with contracts and guarantees
+- **[Development Standards](docs/DEVELOPMENT_STANDARDS.md)** - Coding standards and best practices
+- **[Architecture Guide](docs/ARCHITECTURE.md)** - Technical architecture details
+- **[Contributing Guide](CONTRIBUTING.md)** - How to contribute to the project
+
 ## License
 
 MIT License - See LICENSE file for details.
 
 ## Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contributions are welcome! Please read our [Contributing Guide](CONTRIBUTING.md) and [Development Standards](docs/DEVELOPMENT_STANDARDS.md) before submitting a Pull Request.

@@ -2,6 +2,12 @@
 
 Thank you for your interest in contributing to this project! This document provides guidelines for contributing.
 
+## Quick Links
+
+- **[Development Standards](docs/DEVELOPMENT_STANDARDS.md)** - Comprehensive coding standards and best practices
+- **[API Contracts](docs/API_CONTRACTS.md)** - API documentation and contracts
+- **[Architecture Guide](docs/ARCHITECTURE.md)** - Technical architecture overview
+
 ## Development Setup
 
 1. Clone the repository:
@@ -29,7 +35,9 @@ pytest tests/ --cov=agent_scaling_laws --cov-report=term
 
 ## Code Style
 
-This project follows Python best practices:
+This project follows Python best practices. See [Development Standards](docs/DEVELOPMENT_STANDARDS.md) for complete details.
+
+### Quick Reference
 
 - Use Black for code formatting:
 ```bash
@@ -45,6 +53,14 @@ flake8 src/ tests/
 ```bash
 mypy src/
 ```
+
+### Key Standards
+
+- Python 3.8+ compatibility
+- Type hints on all public APIs
+- Google-style docstrings
+- 80%+ test coverage
+- Follow naming conventions in [Development Standards](docs/DEVELOPMENT_STANDARDS.md)
 
 ## Adding New Features
 
@@ -72,10 +88,14 @@ def test_new_feature():
 
 ## Documentation
 
+All code changes must be properly documented:
+
 - Update README.md for major changes
-- Add docstrings to all public classes and functions
-- Include type hints
+- Add Google-style docstrings to all public classes and functions
+- Include type hints (see [Development Standards](docs/DEVELOPMENT_STANDARDS.md))
 - Provide usage examples
+- Update [API Contracts](docs/API_CONTRACTS.md) for API changes
+- Follow documentation standards in [Development Standards](docs/DEVELOPMENT_STANDARDS.md)
 
 ## Submitting Pull Requests
 
