@@ -196,7 +196,11 @@ If you use this implementation in your research, please cite the original paper:
 ```bibtex
 @article{kim2024towards,
   title={Towards a Science of Scaling Agent Systems},
-  author={Kim, Yubin and Gu, Ken and Park, Chanwoo and Park, Chunjong and Schmidgall, Samuel and Heydari, A. Ali and Yan, Yao and Zhang, Zhihan and Zhuang, Yuchen and Malhotra, Mark and Liang, Paul Pu and Park, Hae Won and Yang, Yuzhe and Xu, Xuhai and Du, Yilun and Patel, Shwetak and Althoff, Tim and McDuff, Daniel and Liu, Xin},
+  author={Kim, Yubin and Gu, Ken and Park, Chanwoo and Park, Chunjong and 
+          Schmidgall, Samuel and Heydari, A. Ali and Yan, Yao and Zhang, Zhihan and 
+          Zhuang, Yuchen and Malhotra, Mark and Liang, Paul Pu and Park, Hae Won and 
+          Yang, Yuzhe and Xu, Xuhai and Du, Yilun and Patel, Shwetak and 
+          Althoff, Tim and McDuff, Daniel and Liu, Xin},
   journal={arXiv preprint arXiv:2512.08296},
   year={2024}
 }
