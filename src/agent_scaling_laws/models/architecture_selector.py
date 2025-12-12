@@ -5,7 +5,7 @@ Based on "Towards a Science of Scaling Agent Systems" (arXiv 2512.08296v1).
 Uses empirical coordination metrics to predict best architecture for a task.
 """
 
-from typing import Dict, Any, Optional, Literal
+from typing import Dict, Any, Optional, Literal, List
 from dataclasses import dataclass
 import numpy as np
 
@@ -222,7 +222,7 @@ class ArchitectureSelector:
         Returns:
             Dictionary mapping architecture to predicted score
         """
-        architectures: list[ArchitectureType] = [
+        architectures: List[ArchitectureType] = [
             "single",
             "independent",
             "centralized",

@@ -66,6 +66,8 @@ def test_select_parallelizable_task():
     
     selected = selector.select_architecture(task, caps)
     # Should prefer centralized for parallel tasks (80.9% improvement from paper)
+    # Hybrid and independent also acceptable as they can handle parallel tasks
+    # Test validates that sequential/single are NOT selected
     assert selected in ["centralized", "hybrid", "independent"]
 
 
@@ -90,6 +92,8 @@ def test_select_dynamic_task():
     
     selected = selector.select_architecture(task, caps)
     # Should prefer decentralized for dynamic tasks (9.2% improvement from paper)
+    # Hybrid also acceptable as it includes decentralized team coordination
+    # Test validates that independent/centralized are less likely
     assert selected in ["decentralized", "hybrid"]
 
 

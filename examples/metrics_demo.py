@@ -148,7 +148,7 @@ def main():
     red = calculate_redundancy(unique_actions=7, total_actions=10)
     print(f"  Unique actions: 7, Total actions: 10")
     print(f"  Redundancy: {red:.1%}")
-    print(f"  → {30 if red > 0.5 else 10 if red > 0.2 else 0}% of actions were duplicates")
+    print(f"  → {red:.1%} of actions were duplicates")
     
     print("\n" + "=" * 80)
 
