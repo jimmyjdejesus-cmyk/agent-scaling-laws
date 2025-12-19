@@ -12,6 +12,8 @@ from .architectures import (
     CentralizedMultiAgent,
     DecentralizedMultiAgent,
     HybridMultiAgent,
+    TaskResult,
+    Message,
 )
 from .metrics import (
     CoordinationMetrics,
@@ -20,7 +22,11 @@ from .metrics import (
     calculate_error_amplification,
     calculate_redundancy,
 )
-from .models import ArchitectureSelector
+from .models import (
+    ArchitectureSelector,
+    TaskCharacteristics,
+    AgentCapabilities,
+)
 
 __all__ = [
     "Agent",
@@ -29,10 +35,14 @@ __all__ = [
     "CentralizedMultiAgent",
     "DecentralizedMultiAgent",
     "HybridMultiAgent",
+    "TaskResult",
+    "Message",
     "CoordinationMetrics",
     "calculate_efficiency",
     "calculate_overhead",
     "calculate_error_amplification",
     "calculate_redundancy",
     "ArchitectureSelector",
+    "TaskCharacteristics",
+    "AgentCapabilities",
 ]
