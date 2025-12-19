@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agent Scaling Laws: Research-Backed Multi-Agent Coordination Framework</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Implementation of Google DeepMind's agent scaling research (arXiv:2512.08296). Optimal multi-agent coordination with 87% prediction accuracy. Research-backed framework for building scalable AI agent systems.">
+    <meta name="keywords" content="agent scaling, multi-agent systems, AI coordination, DeepMind research, agent architecture, distributed AI, agent framework, scaling laws, Python AI">
+    <meta name="author" content="Jimmy De Jesus">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jimmyjdejesus-cmyk.github.io/agent-scaling-laws/">
+    <meta property="og:title" content="Agent Scaling Laws: Research-Backed Multi-Agent Framework">
+    <meta property="og:description" content="Implementation of Google DeepMind's agent scaling research. Build optimal multi-agent systems with 87% accuracy.">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Agent Scaling Laws: Research-Backed Framework">
+    <meta name="twitter:description" content="Implementation of DeepMind's agent scaling research (arXiv:2512.08296). Optimal coordination for AI agent systems.">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        header {
+            text-align: center;
+            color: white;
+            padding: 60px 20px;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        .subtitle {
+            font-size: 1.4em;
+            opacity: 0.95;
+            margin-bottom: 30px;
+        }
+        .badges {
+            margin: 20px 0;
+        }
+        .badges img {
+            margin: 0 5px;
+        }
+        .cta-buttons {
+            margin: 40px 0;
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 40px;
+            margin: 10px;
+            font-size: 1.1em;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            font-weight: 600;
+        }
+        .btn-primary {
+            background: white;
+            color: #667eea;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .btn-secondary {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            border: 2px solid white;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+        .content {
+            background: white;
+            border-radius: 12px;
+            padding: 60px 40px;
+            margin: -50px auto 40px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        .feature-card {
+            padding: 30px;
+            border-radius: 8px;
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+        }
+        .feature-card h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        .research-highlight {
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            padding: 30px;
+            border-radius: 8px;
+            margin: 30px 0;
+            border-left: 4px solid #764ba2;
+        }
+        .code-block {
+            background: #2d2d2d;
+            color: #f8f8f2;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+        .arxiv-badge {
+            background: #b31b1b;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 4px;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px 5px;
+            font-weight: 600;
+        }
+        footer {
+            text-align: center;
+            color: white;
+            padding: 40px 20px;
+            opacity: 0.9;
+        }
+        a { color: #667eea; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🔬 Agent Scaling Laws</h1>
+            <p class="subtitle">Research-Backed Multi-Agent Coordination Framework</p>
+            <p>Implementation of Google DeepMind's "Towards a Science of Scaling Agent Systems"</p>
+            
+            <div class="badges">
+                <img src="https://img.shields.io/badge/python-3.9+-blue.svg" alt="Python">
+                <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License">
+                <img src="https://img.shields.io/badge/arXiv-2512.08296-b31b1b.svg" alt="arXiv">
+                <img src="https://img.shields.io/github/v/release/jimmyjdejesus-cmyk/agent-scaling-laws" alt="Release">
+                <img src="https://img.shields.io/github/stars/jimmyjdejesus-cmyk/agent-scaling-laws?style=social" alt="Stars">
+            </div>
+            
+            <div class="cta-buttons">
+                <a href="https://github.com/jimmyjdejesus-cmyk/agent-scaling-laws" class="btn btn-primary">⭐ View on GitHub</a>
+                <a href="https://arxiv.org/abs/2512.08296" class="btn btn-secondary">📄 Read Research Paper</a>
+                <a href="API_CONTRACTS.md" class="btn btn-secondary">📚 Documentation</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="content">
+            <h2>🎯 What Is This?</h2>
+            <p>Build optimal multi-agent systems using <strong>empirically validated</strong> coordination patterns. Stop guessing - use <strong>research-backed</strong> architectures with <strong>87% accuracy</strong> in predicting the best coordination strategy.</p>
+
+            <div class="research-highlight">
+                <h3>📖 Based on Google DeepMind Research</h3>
+                <p><strong>"Towards a Science of Scaling Agent Systems"</strong> (arXiv:2512.08296v1)</p>
+                <p>This is an independent, open-source implementation created by interpreting the research paper. Not affiliated with or endorsed by Google DeepMind.</p>
+                <a href="https://arxiv.org/abs/2512.08296" class="arxiv-badge">Read Paper on arXiv</a>
+            </div>
+
+            <h2>🚀 Key Features</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <h3>5 Agent Architectures</h3>
+                    <p>Single, Independent, Centralized, Decentralized, and Hybrid coordination patterns - all validated through research.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>Coordination Metrics</h3>
+                    <p>Measure Efficiency, Overhead, Error Amplification, and Redundancy in your multi-agent systems.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>87% Prediction Accuracy</h3>
+                    <p>Architecture selector predicts optimal coordination strategy based on task characteristics.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <h3>Empirically Grounded</h3>
+                    <p>Based on 180 configurations across multiple benchmarks. Not theory - proven results.</p>
+                </div>
+            </div>
+
+            <h2>📊 Research Highlights</h2>
+            <ul style="margin: 20px 0; padding-left: 40px;">
+                <li><strong>Error Amplification</strong>: Independent agents amplify errors 17.2×, while centralized coordination reduces this to 4.4×</li>
+                <li><strong>Performance Gains</strong>: Centralized coordination improves parallelizable tasks by 80.9%</li>
+                <li><strong>Dynamic Tasks</strong>: Decentralized coordination provides 9.2% improvement for adaptive tasks</li>
+                <li><strong>Capability Saturation</strong>: Beyond 45% single-agent accuracy, multi-agent coordination shows diminishing returns</li>
+            </ul>
+
+            <h2>⚡ Quick Start</h2>
+            <div class="code-block">
+pip install -e .
+
+# Basic usage
+from agent_scaling_laws import (
+    SingleAgent,
+    CentralizedMultiAgent,
+    ArchitectureSelector,
+    TaskCharacteristics,
+    AgentCapabilities,
+)
+
+# Define your task
+task_chars = TaskCharacteristics(
+    parallelizability=0.8,
+    dynamism=0.3,
+    tool_complexity=0.5
+)
+
+# Get optimal architecture
+selector = ArchitectureSelector()
+recommended = selector.select_architecture(
+    task_characteristics=task_chars,
+    agent_capabilities=agent_caps
+)
+
+print(f"Use {recommended.architecture_type} for best results!")
+            </div>
+
+            <h2>🎯 Perfect For</h2>
+            <ul style="margin: 20px 0; padding-left: 40px;">
+                <li><strong>AI Researchers</strong> implementing multi-agent systems</li>
+                <li><strong>ML Engineers</strong> building agent coordination frameworks</li>
+                <li><strong>System Architects</strong> designing distributed AI systems</li>
+                <li><strong>Practitioners</strong> applying latest research to production</li>
+            </ul>
+
+            <h2>📚 Documentation</h2>
+            <ul style="margin: 20px 0; padding-left: 40px;">
+                <li><a href="API_CONTRACTS.md">API Contracts</a> - Complete API reference</li>
+                <li><a href="DEVELOPMENT_STANDARDS.md">Development Standards</a> - Coding standards</li>
+                <li><a href="ARCHITECTURE.md">Architecture Guide</a> - Technical details</li>
+                <li><a href="https://github.com/jimmyjdejesus-cmyk/agent-scaling-laws/blob/main/CONTRIBUTING.md">Contributing Guide</a> - How to contribute</li>
+            </ul>
+
+            <h2>📖 Citation</h2>
+            <div class="code-block">
+@article{kim2024towards,
+  title={Towards a Science of Scaling Agent Systems},
+  author={Kim, Yubin and Gu, Ken and Park, Chanwoo and ...},
+  journal={arXiv preprint arXiv:2512.08296},
+  year={2024}
+}
+            </div>
+
+            <h2>📞 Get Involved</h2>
+            <p style="margin: 20px 0;">
+                <a href="https://github.com/jimmyjdejesus-cmyk/agent-scaling-laws">⭐ Star on GitHub</a> · 
+                <a href="https://github.com/jimmyjdejesus-cmyk/agent-scaling-laws/issues">🐛 Report Issues</a> · 
+                <a href="https://github.com/jimmyjdejesus-cmyk/agent-scaling-laws/blob/main/CONTRIBUTING.md">🤝 Contribute</a> · 
+                <a href="https://github.com/sponsors/jimmyjdejesus-cmyk">💰 Sponsor</a>
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p><strong>Agent Scaling Laws</strong> by <a href="https://github.com/jimmyjdejesus-cmyk" style="color: white;">Jimmy De Jesus</a></p>
+            <p>Implementation of research from Google DeepMind (arXiv:2512.08296)</p>
+            <p style="margin-top: 20px; opacity: 0.8;">Released under MIT License · v1.0.0</p>
+        </div>
+    </footer>
+</body>
+</html>
+
