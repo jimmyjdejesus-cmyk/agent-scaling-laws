@@ -1,6 +1,18 @@
 # Agent Scaling Laws
+## Research-Backed Multi-Agent Coordination Framework
 
-Implementation of agent coordination architectures and scaling principles based on the research paper ["Towards a Science of Scaling Agent Systems"](https://arxiv.org/abs/2512.08296) (arXiv:2512.08296v1).
+[![Python Version](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/downloads/)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![arXiv](https://img.shields.io/badge/arXiv-2512.08296-b31b1b.svg)](https://arxiv.org/abs/2512.08296)
+[![Release](https://img.shields.io/github/v/release/jimmyjdejesus-cmyk/agent-scaling-laws)](https://github.com/jimmyjdejesus-cmyk/agent-scaling-laws/releases)
+
+**[⭐ Star on GitHub](https://github.com/jimmyjdejesus-cmyk/agent-scaling-laws) | [📄 Research Paper](https://arxiv.org/abs/2512.08296) | [📚 Documentation](docs/)**
+
+> **Implementation of agent coordination architectures and scaling principles based on Google DeepMind's research paper ["Towards a Science of Scaling Agent Systems"](https://arxiv.org/abs/2512.08296) (arXiv:2512.08296v1).**
+
+### 🎯 **What This Does**
+
+Build optimal multi-agent systems using **empirically validated** coordination patterns. Stop guessing - use **research-backed** architectures with **87% accuracy** in predicting the best coordination strategy.
 
 > **Note:** This is an independent, open-source implementation created by interpreting the research paper. It is not affiliated with or endorsed by Google DeepMind. See [Attribution and Disclaimer](#attribution-and-disclaimer) section below.
 
